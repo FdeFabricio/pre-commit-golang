@@ -435,3 +435,12 @@
     language: 'script'
     description: "Run 'golangci-lint run [$ARGS] $FILE' for each staged .go file"
     pass_filenames: true
+
+-   id: nargs
+    name: 'nargs'
+    entry: nargs.sh
+    types: [go]
+    exclude: '(^|/)vendor/'
+    language: 'script'
+    description: "Run 'nargs' for each staged .go file"
+    pass_filenames: true
